@@ -21,7 +21,6 @@ namespace Shop.Controllers
                     .Join(db.GENRE, c => c.GENRE_ID, g => g.GENRE_ID, (c, g) => new { c, g })
                     .Join(db.MASTER_CATEGORY, com => com.c.CATEGORY_ID, mc => mc.CATEGORY_ID, (com, mc) => new { com, mc })
                     .Join(db.MASTER_PRODUCT,comm => comm.com.c.PRODUCT_ID,p => p.PRODUCT_ID,(comm,p) => new {comm,p})
-                    //.Join(db.MASTER_PRODUCT, comm => comm.com.c.PRODUCT_ID, p => p.PRODUCT_ID, (comm, p) => new { comm, p })
                     .Where(p => p.p.PRODUCT_ID==productId)
                     .Select(x => new Comment{
                         GenreId = x.comm.com.c.GENRE_ID,
