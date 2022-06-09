@@ -10,9 +10,9 @@ namespace Shop.Models
     {
         public string GenreId { get; set; }
 
-        public string ProductId { get; set; }
+        public int ProductId { get; set; }
 
-        public string CommentId { get; set; }
+        public int CommentId { get; set; }
 
         public string Contents { get; set; }
 

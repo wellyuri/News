@@ -13,8 +13,8 @@
         <th>ID</th>
         <th>商品名</th>
         <th>主人公</th>
-        <th>プレイヤー人数</th>
-        <th>年齢制限</th>
+        <th>雑誌</th>
+        <th>出版社</th>
         <th>値段</th>
         <th>コメント</th>
     </tr>
@@ -28,8 +28,8 @@
             <td>@product.ProductId</td>
             <td>@product.ProductName</td>
             <td>@product.Character</td>
-            <td>@product.MaxPlayer</td>
-            <td>@product.MaxPlayer</td>
+            <td>@product.MagazineName</td>
+            <td>@product.Publisher</td>
             <td>@product.Price</td>
             <td><a href="@Url.Action("Index","Comment",new {product.ProductId})">コメント表示</a></td>
         </tr>

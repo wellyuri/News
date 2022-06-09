@@ -27,8 +27,8 @@ namespace Shop.Controllers
                     CategoryName = x.mc.CATEGORY_NAME,
                     GenreName = x.mp.g.GENRE_NAME,
                     Character = x.mp.p.CHARACTER,
-                    MaxPlayer = x.mp.p.MAX_PLAYER,
-                    AgeLimit = x.mp.p.AGE_LIMIT,
+                    MagazineName = x.mp.p.MAGAZINE_NAME,
+                    Publisher = x.mp.p.PUBLISHER,
                     Price = x.mp.p.PRICE
                 })
                 .ToList();
@@ -53,8 +53,8 @@ namespace Shop.Controllers
                         CategoryName = x.c.CATEGORY_NAME,
                         GenreName = x.mp.g.GENRE_NAME,
                         Character = x.mp.p.CHARACTER,
-                        MaxPlayer = x.mp.p.MAX_PLAYER,
-                        AgeLimit = x.mp.p.AGE_LIMIT,
+                        MagazineName = x.mp.p.MAGAZINE_NAME,
+                        Publisher = x.mp.p.PUBLISHER,
                         Price = x.mp.p.PRICE
                     })
                     .ToList();

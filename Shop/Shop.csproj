@@ -154,6 +154,7 @@
     <Compile Include="DataBase\MASTER_CATEGORY.cs" />
     <Compile Include="DataBase\MASTER_PRODUCT.cs" />
     <Compile Include="DataBase\MASTER_USER.cs" />
+    <Compile Include="DataBase\PRODUCT_COMMENT.cs" />
     <Compile Include="DataBase\ShopDB.cs" />
     <Compile Include="DataBase\USER.cs" />
     <Compile Include="Global.asax.cs">
@@ -186,6 +187,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Views\JQuery\Login.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

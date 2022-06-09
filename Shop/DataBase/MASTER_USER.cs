@@ -23,7 +23,6 @@ namespace Shop.DataBase
 
         public double? AUTHORITY { get; set; }
 
-        [Required]
         [StringLength(20)]
         public string PASSWORD { get; set; }
 

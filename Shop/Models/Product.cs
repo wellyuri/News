@@ -10,7 +10,7 @@ namespace Shop.Models
         /// <summary>
         /// プロダクトID
         /// </summary>
-        public string ProductId { get; set; }
+        public int ProductId { get; set; }
 
         public string ProductName { get; set; }
 
@@ -22,9 +22,9 @@ namespace Shop.Models
 
         public string Character { get; set; }
 
-        public string MaxPlayer { get; set; }
+        public string MagazineName { get; set; }
 
-        public string AgeLimit { get; set; }
+        public string Publisher { get; set; }
 
         public string Price { get; set; }
 
