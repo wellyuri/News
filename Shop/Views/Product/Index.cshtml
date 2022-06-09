@@ -1,0 +1,24 @@
+﻿@using Shop.DataBase
+@model List<LOGIN>
+    @{
+        ViewBag.Title = "Index";
+    }
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>ログイン日時</th>
+        <th>ユーザーID</th>
+    </tr>
+    @foreach (var login in Model)
+    {
+        <tr>
+            <td>@login.NO</td>
+            <td>@login.LOGIN_DATE</td>
+            <td>@login.USER_ID</td>
+        </tr>
+        
+    }
+
+</table>
+

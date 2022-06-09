@@ -1,0 +1,39 @@
+﻿@using Shop.DataBase
+@using Shop.Models
+@model List<Product>
+
+@{
+    ViewBag.Title = "Result";
+}
+<h1 class="text-center">商品検索</h1>
+
+<p class="small text-muted text-right">詳細を知りたい方は、商品名をクリックしてください</p>
+
+    <table class="table">
+        <tr class="bg-info">
+            <th>ジャンル</th>
+            <th>カテゴリ</th>
+            <th>ID</th>
+            <th>商品名</th>
+        </tr>
+
+        @foreach (var product in Model)
+
+        {
+            <tr>
+                <td>@product.GenreName</td>
+                <td>@product.CategoryName</td>
+                <td>@product.ProductId</td>
+                <td><a href="@Url.Action("Index","Detail",new {product.ProductId})">@product.ProductName</a></td>
+            </tr>
+
+        }
+
+    </table>
+    <form action="/Search/Index">
+        <div class="form-group">
+            <div class="text-right">
+            <button type="submit" class="btn btn-primary">再検索</button>
+            </div>
+        </div>
+    </form>

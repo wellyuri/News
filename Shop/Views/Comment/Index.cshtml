@@ -1,0 +1,38 @@
+﻿@using Shop.DataBase
+@using Shop.Models
+@model List<Comment>
+
+    @{
+        ViewBag.Title = "Show";
+    }
+    
+    <h1 class="text-center">コメント</h1>
+
+    <table class="table">
+        <tr class="bg-info">
+            <th>ジャンル</th>
+            <th>カテゴリ</th>
+            <th>ID</th>
+            <th>商品名</th>
+            <th>コメント</th>
+        </tr>
+        @foreach (var comment in Model)
+
+        {
+            <tr>
+                <td>@comment.GenreName</td>
+                <td>@comment.CategoryName</td>
+                <td>@comment.ProductId</td>
+                <td>@comment.ProductName</td>
+                <td>@comment.Contents</td>  
+            </tr>
+        }
+    </table>
+
+<form action="/Search/Index">
+    <div class="form-group">
+        <div class="text-right">
+            <button type="submit" class="btn btn-primary" >検索へ戻る</button>
+         </div>
+    </div>
+</form>
